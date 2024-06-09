@@ -1,3 +1,4 @@
+```html
 <!DOCTYPE html>
 <html>
 <head>
@@ -15,6 +16,18 @@
     <style>
         .intro h1:before {
             content: 'Bogdan Gavrilets';
+        }
+        .background-text {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 10rem;
+            color: rgba(0, 0, 0, 0.1);
+            z-index: -1;
+        }
+        .work .container {
+            position: relative;
         }
     </style>
 </head>
@@ -60,6 +73,7 @@
     <div class="work section second" id="experiences">
         <div class="container">
             <h1>Work<br>Experiences</h1>
+            <div class="background-text">Bo</div>
             <ul class="work-list">
                 <li>GitHub | Blockchain Logic Writer</li>
                 <li>Technical Documentation Development: Created detailed and clear documents for various blockchain projects, ensuring comprehensive understanding and accessibility.</li>
@@ -170,3 +184,4 @@
     </script>
 </body>
 </html>
+```
