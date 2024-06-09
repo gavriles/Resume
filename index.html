@@ -1,21 +1,19 @@
-```html
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bogdan Gavrilets</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Resume of Bogdan Gavrilets">
     <meta name="author" content="Bogdan Gavrilets">
-    <title>Bogdan Gavrilets</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/kube/7.1.0/kube.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link href="https://fonts.googleapis.com/css?family=Playfair+Display+SC:700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Lato:400,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/kube.min.css" />
+    <link rel="stylesheet" href="css/font-awesome.min.css" />
+    <link rel="stylesheet" href="css/custom.min.css" />
+    <link rel="shortcut icon" href="img/favicon.png" />
+    <link href='https://fonts.googleapis.com/css?family=Playfair+Display+SC:700' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
     <style>
-        body {
-            font-family: 'Lato', sans-serif;
-        }
-        .intro h1::before {
+        .intro h1:before {
             content: 'Bogdan Gavrilets';
         }
         .background-text {
@@ -29,10 +27,6 @@
         }
         .work .container {
             position: relative;
-        }
-        .social a {
-            color: inherit;
-            text-decoration: none;
         }
     </style>
 </head>
@@ -67,7 +61,9 @@
                 <div class="unit-80">
                     <h1>I live in<br><span id="typed"></span></h1>
                 </div>
-                <p>I am passionate about high-tech projects in the crypto industry. I have extensive experience in technical writing and programming for blockchain projects.</p>
+                <p>
+                    I am passionate about high-tech projects in the crypto industry. I have extensive experience in technical writing and programming for blockchain projects.
+                </p>
             </div>
         </div>
     </div>
@@ -97,16 +93,44 @@
         <div class="container">
             <h1>Technical<br>Skills</h1>
             <ul class="skill-list list-flat">
-                <li>Programming Languages: Solidity, Python, HTML, JavaScript, CSS, CQL</li>
-                <li>Development Tools: Visual Studio Code, Git Bash, GitHub, GitLab</li>
-                <li>Cloud Platforms: Google Cloud Platform (GCP)</li>
-                <li>Analytics: Google Analytics</li>
-                <li>Project Management: Asana, Jira, Notion</li>
-                <li>Design Collaboration: Figma, Miro</li>
-                <li>Database Management: MySQL, BigQuery</li>
-                <li>Communication Platforms: Telegram, Discord, Twitter, Slack, Instagram, TikTok</li>
-                <li>Content Creation: Canva, CupCut</li>
-                <li>Live Streaming: Twitch</li>
+                <li>Programming Languages</li>
+                <li>Solidity, Python, HTML, JavaScript, CSS, CQL</li>
+            </ul>
+            <ul class="skill-list list-flat">
+                <li>Development Tools</li>
+                <li>Visual Studio Code, Git Bash, GitHub, GitLab</li>
+            </ul>
+            <ul class="skill-list list-flat">
+                <li>Cloud Platforms</li>
+                <li>Google Cloud Platform (GCP)</li>
+            </ul>
+            <ul class="skill-list list-flat">
+                <li>Analytics</li>
+                <li>Google Analytics</li>
+            </ul>
+            <ul class="skill-list list-flat">
+                <li>Project Management</li>
+                <li>Asana, Jira, Notion</li>
+            </ul>
+            <ul class="skill-list list-flat">
+                <li>Design Collaboration</li>
+                <li>Figma, Miro</li>
+            </ul>
+            <ul class="skill-list list-flat">
+                <li>Database Management</li>
+                <li>MySQL, BigQuery</li>
+            </ul>
+            <ul class="skill-list list-flat">
+                <li>Communication Platforms</li>
+                <li>Telegram, Discord, Twitter, Slack, Instagram, TikTok</li>
+            </ul>
+            <ul class="skill-list list-flat">
+                <li>Content Creation</li>
+                <li>Canva, CupCut</li>
+            </ul>
+            <ul class="skill-list list-flat">
+                <li>Live Streaming</li>
+                <li>Twitch</li>
             </ul>
         </div>
     </div>
@@ -140,9 +164,12 @@
     </footer>
 
     <!-- Javascript -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/typed.min.js"></script>
+    <script src="js/kube.min.js"></script>
+    <script src="js/site.js"></script>
     <script>
+        function newTyped() {} 
         $(function() {
             $("#typed").typed({
                 strings: ["Montevideo", "the Blockchain World", "everywhere"],
@@ -150,7 +177,7 @@
                 backDelay: 700,
                 contentType: "html",
                 loop: true,
-                resetCallback: function() {}
+                resetCallback: function() { newTyped(); }
             });
         });
     </script>
