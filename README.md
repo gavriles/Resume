@@ -1,1 +1,1 @@
-https://gavriles.github.io/Resume
+https://gavriles.github.io/resume
